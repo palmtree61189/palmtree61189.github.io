@@ -1,0 +1,46 @@
+.app-screen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+}
+
+/* control styling for user input area */
+.user-input-area {
+    flex: 1 1 auto;
+    margin: 0 10px;
+    width: 300px;
+    background-color: #9f9;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.text-entry {
+    margin: auto;
+}
+/* Control styling for preview area */
+.preview-area {
+    flex: 3 1 auto;
+    margin: 0 10px;
+}
+
+#previewCanvas {
+    border: 2px solid black;
+}
+
+@media print {
+    .user-input-area, .preview-area h2, button{
+        display: none;
+    }
+    .preview-area #previewCanvas{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+@page {
+    margin: 1cm;
+}
+    
+}
